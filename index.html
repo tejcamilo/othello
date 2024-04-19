@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othello</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="center">
+        <div class="score">
+            <div class="score-board">White
+                <p id="score_w">2</p>
+            </div>
+           
+            <div class="score-board">Black
+                <p id="score_b">2</p>
+            </div>
+
+            <div class="player">Black</div>
+            
+        </div>
+
+        <div class="board">
+            <div class="square"><button id="a0" onclick="setPiece('a0')">a0 none</button></div>
+            <div class="square"><button id="a1" onclick="setPiece('a1')">a1 none</button></div>
+            <div class="square"><button id="a2" onclick="setPiece('a2')">a2 none</button></div>
+            <div class="square"><button id="a3" onclick="setPiece('a3')">a3 none</button></div>
+            <div class="square"><button id="a4" onclick="setPiece('a4')">a4 none</button></div>
+            <div class="square"><button id="a5" onclick="setPiece('a5')">a5 none</button></div>
+            <div class="square"><button id="a6" onclick="setPiece('a6')">a6 none</button></div>
+            <div class="square"><button id="a7" onclick="setPiece('a7')">a7 none</button></div>
+
+            <div class="square"><button id="b0" onclick="setPiece('b0')">b0 none</button></div>
+            <div class="square"><button id="b1" onclick="setPiece('b1')">b1 none</button></div>
+            <div class="square"><button id="b2" onclick="setPiece('b2')">b2 none</button></div>
+            <div class="square"><button id="b3" onclick="setPiece('b3')">b3 none</button></div>
+            <div class="square"><button id="b4" onclick="setPiece('b4')">b4 none</button></div>
+            <div class="square"><button id="b5" onclick="setPiece('b5')">b5 none</button></div>
+            <div class="square"><button id="b6" onclick="setPiece('b6')">b6 none</button></div>
+            <div class="square"><button id="b7" onclick="setPiece('b7')">b7 none</button></div>
+        
+            <div class="square"><button id="c0" onclick="setPiece('c0')">c0 none</button></div>
+            <div class="square"><button id="c1" onclick="setPiece('c1')">c1 none</button></div>
+            <div class="square"><button id="c2" onclick="setPiece('c2')">c2 none</button></div>
+            <div class="square"><button id="c3" onclick="setPiece('c3')">c3 none</button></div>
+            <div class="square"><button id="c4" onclick="setPiece('c4')">c4 none</button></div>
+            <div class="square"><button id="c5" onclick="setPiece('c5')">c5 none</button></div>
+            <div class="square"><button id="c6" onclick="setPiece('c6')">c6 none</button></div>
+            <div class="square"><button id="c7" onclick="setPiece('c7')">c7 none</button></div>
+
+            <div class="square"><button id="d0" onclick="setPiece('d0')">d0 none</button></div>
+            <div class="square"><button id="d1" onclick="setPiece('d1')">d1 none</button></div>
+            <div class="square"><button id="d2" onclick="setPiece('d2')">d2 none</button></div>
+            <div class="square"><button id="d3" class="white" onclick="setPiece('d3')">d3 white</button></div>
+            <div class="square"><button id="d4" class="black" onclick="setPiece('d4')">d4 black</button></div>
+            <div class="square"><button id="d5" onclick="setPiece('d5')">d5 none</button></div>
+            <div class="square"><button id="d6" onclick="setPiece('d6')">d6 none</button></div>
+            <div class="square"><button id="d7" onclick="setPiece('d7')">d7 none</button></div>
+
+            <div class="square"><button id="e0" onclick="setPiece('e0')">e0 none</button></div>
+            <div class="square"><button id="e1" onclick="setPiece('e1')">e1 none</button></div>
+            <div class="square"><button id="e2" onclick="setPiece('e2')">e2 none</button></div>
+            <div class="square"><button id="e3" class="black" onclick="setPiece('e3')">e3 black</button></div>
+            <div class="square"><button id="e4" class="white" onclick="setPiece('e4')">e4 white</button></div>
+            <div class="square"><button id="e5" onclick="setPiece('e5')">e5 none</button></div>
+            <div class="square"><button id="e6" onclick="setPiece('e6')">e6 none</button></div>
+            <div class="square"><button id="e7" onclick="setPiece('e7')">e7 none</button></div>
+
+            <div class="square"><button id="f0" onclick="setPiece('f0')">f0 none</button></div>
+            <div class="square"><button id="f1" onclick="setPiece('f1')">f1 none</button></div>
+            <div class="square"><button id="f2" onclick="setPiece('f2')">f2 none</button></div>
+            <div class="square"><button id="f3" onclick="setPiece('f3')">f3 none</button></div>
+            <div class="square"><button id="f4" onclick="setPiece('f4')">f4 none</button></div>
+            <div class="square"><button id="f5" onclick="setPiece('f5')">f5 none</button></div>
+            <div class="square"><button id="f6" onclick="setPiece('f6')">f6 none</button></div>
+            <div class="square"><button id="f7" onclick="setPiece('f7')">f7 none</button></div>
+
+            <div class="square"><button id="g0" onclick="setPiece('g0')">g0 none</button></div>
+            <div class="square"><button id="g1" onclick="setPiece('g1')">g1 none</button></div>
+            <div class="square"><button id="g2" onclick="setPiece('g2')">g2 none</button></div>
+            <div class="square"><button id="g3" onclick="setPiece('g3')">g3 none</button></div>
+            <div class="square"><button id="g4" onclick="setPiece('g4')">g4 none</button></div>
+            <div class="square"><button id="g5" onclick="setPiece('g5')">g5 none</button></div>
+            <div class="square"><button id="g6" onclick="setPiece('g6')">g6 none</button></div>
+            <div class="square"><button id="g7" onclick="setPiece('g7')">g7 none</button></div>
+
+            <div class="square"><button id="h0" onclick="setPiece('h0')">h0 none</button></div>
+            <div class="square"><button id="h1" onclick="setPiece('h1')">h1 none</button></div>
+            <div class="square"><button id="h2" onclick="setPiece('h2')">h2 none</button></div>
+            <div class="square"><button id="h3" onclick="setPiece('h3')">h3 none</button></div>
+            <div class="square"><button id="h4" onclick="setPiece('h4')">h4 none</button></div>
+            <div class="square"><button id="h5" onclick="setPiece('h5')">h5 none</button></div>
+            <div class="square"><button id="h6" onclick="setPiece('h6')">h6 none</button></div>
+            <div class="square"><button id="h7" onclick="setPiece('h7')">h7 none</button></div>
+        </div>
+        <div class="score">
+            
+            
+        </div>
+
+    </div>
+  </body>
+</html>

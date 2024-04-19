@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.center {
+  position: static;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+}
+
+.score-board {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  margin: 10px auto;
+  width: 75px;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+
+}
+
+.board {
+  margin: auto;
+  width: 560px;
+  height: 560px;
+  border: 1px solid black;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border: 0.5px solid black;
+  background-color: #00bc8c;
+}
+
+button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  color: transparent; /* change this to blue to turn on debug mode. */
+}
+
+.validMove {
+  border: 1px solid black;
+  border-radius:50%;
+}
+
+.clicked {
+  border: 1px solid red !important;
+}
+
+.white {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
+
+.black {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+}
+
+.score {
+  padding: 50px;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
